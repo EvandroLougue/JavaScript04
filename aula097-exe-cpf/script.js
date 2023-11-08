@@ -17,6 +17,6 @@ Se o dígito for maior que 9, então considera 0
 */
 
 let cpf = '705.484.450-52';
-let cpfLimpo = cpf.replace(/\D+/g, ''); // expressão regular para 'TUDO QUE NÃO FOR NÚMERO'
+let cpfLimpo = cpf.replace(/\D+/g, ''); // expressão regular para 'TUDO QUE NÃO FOR NÚMERO, substituir POR'
 cpfArray = Array.from(cpfLimpo);
 console.log(cpfArray.reduce((acum, valor) => acum + Number(valor), 0));
