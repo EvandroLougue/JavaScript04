@@ -22,13 +22,13 @@ function Produto(nome, preco, estoque) {
     Object.defineProperties(this, {
         nome: {
             enumerable: true,   // mostra a chave
-            value: estoque,    // valor do parâmetro
+            value: nome,    // valor do parâmetro
             writable: true,  //   valor alterável
             configurable: false // não deixa alterar, nem apagar
         },
         preco: {
             enumerable: true,   // mostra a chave
-            value: estoque,    // valor do parâmetro
+            value: preco,    // valor do parâmetro
             writable: true,  //   valor alterável
             configurable: false // não deixa alterar, nem apagar
         },
@@ -37,6 +37,7 @@ function Produto(nome, preco, estoque) {
 };
 const p1 = new Produto('Headset', 399, 5);
 p1.estoque = 30000;
+delete p1.estoque;
 console.log(p1);
 
 console.log(Object.keys(p1));

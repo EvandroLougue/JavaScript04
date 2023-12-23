@@ -20,3 +20,5 @@ Pessoa.prototype.nomeCompleto = function() {       // novas funções pré defin
 
 console.log(pessoa1);
 console.dir(data);
+
+console.log(pessoa1.nomeCompleto())

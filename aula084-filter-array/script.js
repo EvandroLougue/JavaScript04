@@ -43,9 +43,7 @@ const pessoas = [
 const mais6letras = pessoas.filter(objeto => objeto.nome.length >= 6);
 console.log(mais6letras);
 
-const mais50anos = pessoas.filter(function(valor) {
-    return valor.idade > 50;
-});
+const mais50anos = pessoas.filter(valor => valor.idade > 50);
 console.log(mais50anos);
 
 const letraA = pessoas.filter(function(obj) {

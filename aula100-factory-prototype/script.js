@@ -21,4 +21,4 @@ const p1 = criaPessoa('Evandro', 'Lougue');
 console.dir(p1);
 
 const p2 = criaPessoa('Leandro', 'Monteiro');
-console.log(p2); 
+console.log(p2.comer(), p2.beber()); 

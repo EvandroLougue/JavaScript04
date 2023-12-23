@@ -24,7 +24,7 @@ const pessoas = [
 
 console.log(pessoas);
 
-const strings = pessoas.map(objeto => objeto.nome.valueOf());
+const strings = pessoas.map(objeto => objeto.nome);
 console.log(strings);
 ////
 const removeNome = pessoas.map(obj => ({ idade: obj.idade }));
